@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <div class="container grid-navbar">
+            <div class="navbar-logo">
+                <h1 class="logo">.eCOM STORE</span></h1>
+            </div>
+            <!-- </div> -->
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-circle-user icon"></i>
+                      </li>
+                      <li class="nav-item">
+                        <i class="fa-solid fa-cart-shopping icon"></i>
+                      </li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+
+    <!-- ========== Start Our product section ========== -->
+    <section class="section-products">
+        <div class="container">
+            <h2 class="section-common--heading">Checkout our products</h2>
+            <div id="productContainer"></div>
+        </div>
+    </section>
+
+    <template id="productTemplate">
+        <div class="cards" id="cardValue" data-aos="fade-up" data-aos-delay="100">
+            <article class="information [card]">
+                <span class="category"></span>
+                <div class="image-container">
+                    <img src="" alt="" class="product-image">
+                </div>
+
+                <h2 class="product-name"></h2>
+
+                <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="product-desc"></p>
+                <div class="product-price--element">
+                    <p class="product-price"></p>
+                    <p class="actual-product--price"></p>
+                </div>
+                <div class="product-stock--element">
+                    <p class="product-property">Total Stocks Available:</p>
+                    <p class="product-stock"></p>
+                </div>
+                <div class="product-quantity--element">
+                    <p class="product-property">Quantity(Pieces)</p>
+                    <div class="stock-element">
+                        <button class="cart-increment">+</button>
+                        <p class="product-quantity">1</p>
+                        <button class="cart-decrement">-</button>
+                    </div>
+                </div>
+                <button class="add-to--cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                </button>
+            </article>
+        </div>
+    </template>
+
+    <!-- ========== End Our product section ========== -->
+
+    <!-- ========== Start footer Section ========== -->
+    <footer class="section-footer ">
+        <div class="footer-container container footer-grid--four---cols">
+            <div class="content-1">
+                <h1 class="f-logo">.eCOM STORE</h1>
+                <p>
+                    Welcome to eCom Store, your ultimate destination for
+                    cutting-edge gadgets!
+                </p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+            </div>
+            <div class="content-2">
+                <h4>SHOPPING</h4>
+                <a href="#">Computer Store</a>
+                <a href="#">Laptop Store</a>
+                <a href="#">Accessories</a>
+                <a href="#">Sales & Discount</a>
+            </div>
+            <div class="content-3">
+                <h4>Experience</h4>
+                <a href="./contact.html">Contact Us</a>
+                <a href="" target="_blank">Payment Method</a>
+                <a href="" target="_blank">Delivery</a>
+                <a href="" target="_blank">Return and Exchange</a>
+            </div>
+            <div class="content-4">
+                <h4>NEWSLETTER</h4>
+                <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email" />
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt">
+                <p>Design and Code by <span style="color: red;">&#10084;</span> Uttam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== End footer Section ========== -->
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> -->
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
